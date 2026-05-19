@@ -4,17 +4,17 @@ const useAuthStore = create((set) => ({
   user: null,
   token: null,
 
-  setAuth: (user, token) =>
+  login: (user, token) =>
     set({
       user,
-      token,
+      token
     }),
 
   logout: () =>
     set({
       user: null,
-      token: null,
-    }),
+      token: null
+    })
 }));
 
 export default useAuthStore;
